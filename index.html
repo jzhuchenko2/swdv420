@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <link href="mystyle.css" rel="stylesheet" type="text/css">
+    <head>
+        <title>OneDocu</title>
+        </head>
+    <body>
+        <nav class="navbar">
+            <!-- LOGO -->
+            <div class="logo">OneDocu</div>
+
+            
+            <!-- NAVIGATION MENU -->
+            <ul class="nav-links">
+            
+            <!-- USING CHECKBOX HACK 
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>-->
+            
+            <!-- NAVIGATION MENUS -->
+            <div class="menu">
+            
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            
+            <!--<li class="services">
+            <a href="/">Services</a>
+            
+             DROPDOWN MENU 
+            <ul class="dropdown">
+            <li><a href="/">Dropdown 1 </a></li>
+            <li><a href="/">Dropdown 2</a></li>
+            <li><a href="/">Dropdown 2</a></li>
+            <li><a href="/">Dropdown 3</a></li>
+            <li><a href="/">Dropdown 4</a></li>
+            </ul>
+            
+            </li>-->
+            
+            <li><a href="pricing.html">Pricing</a></li>
+            </div>
+            </ul>
+            </nav>
+        <section>
+            <h1>Welcome to OneDocu</h1>
+        <section id="blocks">
+            <p>Discover why OneDocu is the most widely used electronic signature</p>
+            <p>Sign remotely
+                eSignature works where you do. Send and sign from virtually anywhere, on any device.</p>
+            <p>Send securely
+                Electronic signatures are more secure than paper and email attachments.</p>
+            <p>Scale as you grow
+                Whether you're sending one or one hundred contracts, eSignature makes it easy to agree.</p>
+            <p>Tap into 400+ integrations
+                Connect with other applications like Microsoft, Google, Salesforce and Workday.</p>
+        </section>
+            
+            <section>
+                <p id="statement5"></p>
+                <script>
+                    var statement = {
+                        first: "Identification",
+                        second : "Table",};
+                    statement.name = function() {
+                        return this.first + " and " + this.second;};
+                        document.getElementById("statement5").innerHTML ="What is the most valuable type of  " + statement.name();
+                  </script>
+                <p id="document"></p>
+            <script>
+
+                // Create an object:
+          
+                var documents = {
+                  text: "Factual",
+                  tables: "Correlation",
+                  id_type: "Driver's License",
+                  get id() {
+                    return this.id_type;
+                  },
+                  get table() {
+                    return this.tables;
+                  },
+                };
+                document.getElementById("document").innerHTML = documents.id +" and " +documents.table;
+              </script>
+              <script>
+                var documents = {
+                  text: "Literary",
+                  tables: "",
+                  id_type: "",
+                  set id(id) {
+                    this.id_type = id;
+                  },
+                  set table(table) {
+                    this.tables = table;
+                  },
+                };
+                documents.id = "Social Security Card";
+                documents.table = "Factor Analysis table";
+                document.getElementById("document").innerHTML = documents.id_type +" and "+ documents.tables;
+              </script>
+
+
+              <p id="statement6"></p>
+              <script>
+              var txt = "";
+              var documents = {text:"Factual,", table_type:"Correlation Table, and", id_type:"Student Identification Card"};
+              var x;
+              for (x in documents) {
+                txt += documents[x] + " ";
+              }
+              document.getElementById("statement6").innerHTML = txt;
+              </script>
+
+
+            </section>
+            
+            <section>
+            <a href="docs.jpeg">
+                <img src="docs.jpeg" alt="Document">
+              </a>
+            </section>
+        <section> 
+            <p>
+                "The cost savings, speed and convenience of OneDocu have already made a significant, positive impact on our business. OneDocu has paid for itself multiple times over."
+
+                Ericka Gorman
+                Consumer Loan Product, Product Manager at Alliant Credit Union
+            </p>
+
+        </section>
+        </section>
+    </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <link href="mystyle.css" rel="stylesheet" type="text/css">
+    <head>
+        <title>OneDocu</title>
+        </head>
+    <body>
+        <nav class="navbar">
+            <!-- LOGO -->
+            <div class="logo">OneDocu</div>
+            
+            <!-- NAVIGATION MENU -->
+            <ul class="nav-links">
+            
+            <!-- USING CHECKBOX HACK 
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>-->
+            
+            <!-- NAVIGATION MENUS -->
+            <div class="menu">
+            
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            
+            <!--<li class="services">
+            <a href="/">Services</a>
+            
+             DROPDOWN MENU
+            <ul class="dropdown">
+            <li><a href="/">Dropdown 1 </a></li>
+            <li><a href="/">Dropdown 2</a></li>
+            <li><a href="/">Dropdown 2</a></li>
+            <li><a href="/">Dropdown 3</a></li>
+            <li><a href="/">Dropdown 4</a></li>
+            </ul>
+            
+            </li>-->
+            
+            <li><a href="pricing.html">Pricing</a></li>
+            </div>
+            </ul>
+            </nav>
+        <section>
+            <h1>About OneDocu</h1>
+        <section id="blocks">
+            <p>Scanned documents provide backup copies of your paper vital records in an easily portable digital format.</p>
+            <p>One of the biggest advantages of scanning documents is the ease of backing them up.</p>
+            <p>Let OneDocu, secure document scanning company take the hassle out of your records scanning project.</p>
+            <p>Documents can be manipulated and changed easily, and you can usually find them quicker than searching through the dozens of file cabinets or mounds of paperwork that clutter your office.</p>
+        </section>
+            <div id = "inputstuff">
+                <p>Compare two Identifications:</p>
+            
+                <p> ID 1: </p> <input id="id1" type="text" />
+
+                <p> ID 2: </p> <input id="id2" type="text" />
+
+                    <button value="compare" onclick="compareNames()"> Compare! </button>
+                    <script type="text/javascript">
+                        function compareNames(){
+                        var a=document.getElementById("id1");
+                        var b=document.getElementById("id2");
+                        var c=id1.value;
+                        var d=id2.value;
+                            alert(c==d);}
+                    </script>
+            </div>
+            
+            <section>
+            <a href="scandoc.jpg">
+                <img src="scandoc.jpg" alt="Document">
+              </a>
+            </section>
+        <section> 
+            <p>
+                This allows you to edit documents quickly, or redact private information to protect your customers.
+            </p>
+
+        </section>
+        </section>
+    </body>
+</html>
